@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PatternRecognition">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/PatternRecognition.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

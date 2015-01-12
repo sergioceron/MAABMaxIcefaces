@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ice="http://www.icesoft.com/icefaces/component"
+      xmlns:ace="http://www.icefaces.org/icefaces/components"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+    <title>Templace</title>
+</h:head>
+<h:body>
+<ui:composition>
+    <div class="example">
+        <ace:panel header="#{title}">
+            <div class="content">
+                <div class="desc">
+                    <ice:outputText value="#{description}" escape="false" nospan="true"/>
+                </div>
+                <h:panelGroup layout="block" styleClass="instance" >
+                    <!--<ui:insert name="example"/>-->
+                </h:panelGroup>
+            </div>
+        </ace:panel>
+    </div>
+</ui:composition>
+</h:body>
+</html>

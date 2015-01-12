@@ -1,0 +1,109 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ace="http://www.icefaces.org/icefaces/components"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Predicción de Estructuras Secundarias de Proteínas</title>
+    <title>Templace</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+</h:head>
+<h:body>
+    <h:form id="example-form">
+    <div id="wrapper">
+
+        <div id="header">
+            <div id="menu">
+                <ul>
+                    <li class="current_page_item"><a href="/">Inicio</a></li>
+
+                    <li><a href="ayuda.php">Ayuda</a></li>
+                </ul>
+            </div>
+            <!-- fin #menu -->
+            <div id="search">
+
+            </div>
+            <!-- fin #busqueda -->
+        </div>
+        <!-- fin #cabecera -->
+        <div id="logo">
+            <h1><a href="#"> </a></h1>
+        </div>
+        <hr/>
+        <!-- fin #logo -->
+        <!-- fin #header-wrapper -->
+
+        <div id="page">
+            <div id="content">
+                <div class="post">
+                    <h2 class="title">Predicción con Homologos</h2>
+
+                    <div class="entry">
+                        <p style="text-align:center;margin-left:-10px">Seleccione la el banco de datos a procesar</p>
+                        <div class="fileinputs">
+
+                            <ace:fileEntry id="file-entry"
+                                           relativePath="/files/"
+                                           maxFileCount="10"
+                                           maxFileCountMessage="Limited to 10 files uploaded concurrantly."
+                                           fileEntryListener="#{fileEntry.sampleListener}"
+                                           maxFileSize="6291456"
+                                           maxFileSizeMessage="Submitted file is too large."
+                                           maxTotalSize="18874368"
+                                           maxTotalSizeMessage="Total size of submitted files is too large."
+                                           required="true"
+                                           requiredMessage="The file is required to submit this form."
+                                           useOriginalFilename="true"
+                                           useSessionSubdir="true"/>
+
+
+                            <h:commandButton id="submit" type="submit" value="Send File" styleClass="upload"/>
+                            <br/>
+                            <br/>
+
+                        </div>
+                        <div style="text-align:center;">
+                            <h:outputLabel value="#{fileEntry.result}" style="font-size:40px;text-align: center"/>
+                        </div>
+                        <div class="loading"></div>
+                        <div id="ss"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin #contenido -->
+            <div id="sidebar">
+                <ul>
+                    <li>
+                        <h2>Enlaces</h2>
+                        <ul>
+                            <li><a href="http://www.ncbi.nlm.nih.gov/">
+                                <img src="images/ncbi.png"/>http://www.ncbi.nlm.nih.gov/</a><a href="#"></a></li>
+                            <li><a href="http://www.pdb.org/pdb/home/home.do">
+                                <img src="images/pdb.png"/>http://www.pdb.org/pdb/home/home.do</a></li>
+                            <li><a href="http://jmol.sourceforge.net/index.es.html">
+                                <img src="images/jmol.png"/>http://jmol.sourceforge.net/index.es.html</a></li>
+                            <li><a href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">
+                                <img src="images/blast.png"/>http://blast.ncbi.nlm.nih.gov/Blast.cgi</a></li>
+                            <li><a href="http://webclu.bio.wzw.tum.de/stride/">
+                                <img src="images/stride.png"/>http://webclu.bio.wzw.tum.de/stride/</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin #menu lateral -->
+            <div style="clear: both;">
+
+            </div>
+        </div>
+        <!-- fin #pagina -->
+
+        <div id="footer">
+            <p>Copyright (c) 2011 Sistema Web para la Predicción de Estructuras Secundarias de las Proteínas.</p>
+        </div>
+        <!-- fin #pie de pagina -->>
+    </div>
+
+</h:form>
+</h:body>
+        </html>

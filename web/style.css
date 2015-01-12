@@ -1,0 +1,454 @@
+
+/*
+Diseñado por 	Leslie Victoria Rodriguez Quiñones
+				José Antonio Cuevas Barrón
+Escuela Superior de Computo ---- Trabajo Terminal 20100111
+*/
+
+body {
+	margin-top: 50px;
+	padding: 0;
+	background: #FFFFFF url(images/img01.jpg) repeat-x left top;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #837669;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #649632;
+}
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 20px; }
+
+h3 { }
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 240%;
+	text-align: justify;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+ul, ol { }
+
+blockquote { }
+
+a { color: #000000; }
+
+a:hover { text-decoration: none; }
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 7px 30px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 7px 0 0 30px;
+}
+
+hr { display: none; }
+
+.list1 {
+}
+
+.list1 li {
+	float: left;
+	line-height: normal;
+}
+
+.list1 li img {
+	margin: 0 30px 30px 0;
+}
+
+.list1 li.alt img {
+	margin-right: 0;
+}
+
+#wrapper {
+}
+
+label{
+	display: block;
+	float: left;
+	width: 90px;
+}
+fieldset{
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+}
+legend{
+	font-size: 13px;
+	font-weight: bold;
+	color: #036;
+}
+fieldset div{
+	margin:5px;
+}
+fieldset input[type="text"],
+fieldset input[type="password"]{
+	width: 300px;
+}
+
+/* Header */
+
+#header-wrapper {
+	width: 880px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 900px;
+	height: 60px;
+	margin: 0 auto;
+	background: url(images/img02.jpg) no-repeat left top;
+}
+
+/* Menu */
+
+#menu {
+	float: left;
+	width: 520px;
+	height: 51px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 20px 0 0 20px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: block;
+	float: left;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	padding: 5px 12px 5px 28px;
+	background: url(images/img06.gif) no-repeat left 50%;
+	text-decoration: none;
+	font: 14px Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+
+#menu a:hover { text-decoration: underline; }
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 380px;
+	height: 76px;
+}
+
+#search form {
+	float: right;
+	margin: 0;
+	padding: 5px 20px 0 0;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search input {
+	float: left;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+}
+
+#search .user, 
+#search .pass {
+	float: left;
+	width: 130px;
+	color: #fff;
+}
+
+#search-text {
+	width: 120px;
+	height: 18px;
+	padding: 3px 0px 0 5px;
+	background: #ECF9E4;
+	border: 1px solid #E37100;
+	margin-right: 5px;
+	color: #658453;
+}
+
+#search-submit {
+  margin-top: 21px;
+  text-indent: -2000px;
+  width: 57px;
+	height: 26px;
+	margin-left: 5px;
+	color: #39561D;
+	background:url(images/login.png) no-repeat;
+	border: 0px;
+}
+
+
+div.fileinputs {
+	position: relative;
+text-align:center;
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	z-index: 1;
+}
+
+input.file {
+	position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+}
+
+.upload {
+  margin-top: 20px;
+  text-indent: -2000px;
+  width: 194px;
+	height: 41px;
+	color: #39561D;
+	background:url(images/upload.png) no-repeat;
+	border: 0px;
+}
+
+.calculate {
+  margin-top: 20px;
+  text-indent: -2000px;
+  width: 194px;
+	height: 41px;
+	color: #39561D;
+	background:url(images/calculate.png) no-repeat;
+	border: 0px;
+}
+
+.register {
+  margin-top: 20px;
+  margin-left: 10px;
+  text-indent: -2000px;
+  width: 194px;
+	height: 41px;
+	color: #39561D;
+	background:url(images/register.png) no-repeat;
+	border: 0px;
+}
+
+table.check{
+  border: 1px solid #eee;
+}
+
+table.check .a{
+  background-color: #eee;
+}
+
+table.check .b{
+  background-color: #ddd;
+}
+
+table.check .c{
+  background-color: #ccc;
+}
+
+table.check .d{
+  background-color: #bbb;
+}
+
+
+/* Page */
+
+#page {
+	width: 900px;
+	margin: 0 auto;
+	padding: 30px 0px 0px 0px;
+}
+
+/** LOGO */
+
+#logo {
+	width: 900px;
+	height: 230px;
+	margin: 0 auto;
+	background: url(images/img03.jpg) no-repeat left top;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0 0 0 170px;
+	line-height: normal;
+}
+
+#logo h1 { 	float: left;
+padding-top: 70px; }
+
+#logo h1 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+#logo h1 a:hover { text-decoration: underline; }
+
+#logo p {
+	padding: 130px 0 0 170px;
+	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+
+#logo p a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#logo p a:hover { text-decoration: underline; }
+
+/* Content */
+
+#content {
+	float: right;
+	width: 600px;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 25px;
+}
+
+.post .title {
+	height: 30px;
+	margin-bottom: 3px;
+	padding: 8px 0px 2px 40px;
+	background: url(images/img05.jpg) no-repeat left top;
+	color: #FFFFFF;
+}
+
+.post .date {
+	float: right;
+	margin-top: -45px;
+	padding-right: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-size: 18px;
+	color: #F1B566;
+}
+
+.post .meta {
+	margin: -30px  0 3px 25px;
+	padding: 2px 30px 2px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 10px;
+	color: #B6ACA2;
+}
+
+.post .meta a { color: #B6ACA2; }
+
+.post .entry {
+	padding: 25px 20px 0px 20px;
+}
+
+.post .links {
+	margin: 0 250px 0 0;
+	padding: 0 0 0 0px;
+}
+
+.post .links .comments {
+}
+
+.post .links .permalink {
+	padding-left: 17px;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 280px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar li {
+	margin-bottom: 30px;
+	padding: 0 0 20px 0px;
+}
+
+#sidebar li ul {
+	line-height: 200%;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 0 20px;
+}
+
+#sidebar p {
+	margin: 0;
+	padding: 0 20px;
+}
+
+#sidebar h2 {
+	height: 33px;
+	margin: 0 0 20px 0px;
+	padding: 8px 0 2px 40px;
+	background: url(images/img04.jpg) no-repeat left top;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+
+#sidebar p {
+	line-height: 200%;
+}
+
+/* Footer */
+
+#footer {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(images/img07.jpg) no-repeat left top;
+	height: 61px;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	line-height: normal;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #F1B566;
+}
